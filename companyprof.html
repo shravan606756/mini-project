@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <style>
+    /* Resetting margin, padding, and box sizing for all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: black;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
+        color: white;
+        text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: yellow;  
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      font-weight: bold;
+      color: yellow;  /* Set color to yellow on hover */
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2, section h3 {
+      color: #007bff;
+    }
+
+    .about, .timeline, .team {
+      padding: 20px;
+      background-color: yellow;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline ul {
+      list-style: none;
+    }
+
+    .timeline ul li {
+      margin: 10px 0;
+    }
+
+    .team {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #333;
+      color: black;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Tech Devices Inc.</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="homepage.htlm.html">Home</a></li>
+        <li><a href="companyprof.html">Company Profile</a></li>
+        <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Welcome to Tech Devices Inc.</h2>
+      <p>We are a leading company in the electronics industry, specializing in high-quality TVs and mobile devices. Our mission is to innovate and provide exceptional products to enhance the way people experience technology.</p>
+    </section>
+
+    <section class="about">
+      <h3>Our Mission</h3>
+      <p>At Tech Devices Inc., we focus on bringing cutting-edge technology to the market. Our dedication to quality, customer satisfaction, and sustainability has made us a trusted name in the tech industry.</p>
+    </section>
+
+    <section class="timeline">
+      <h3>Our Journey</h3>
+      <ul>
+        <li><strong>2005:</strong> Tech Devices Inc. is founded.</li>
+        <li><strong>2010:</strong> First mobile phone model launched.</li>
+        <li><strong>2015:</strong> Introduced Smart TVs to the market.</li>
+        <li><strong>2020:</strong> Expanded globally and adopted eco-friendly practices.</li>
+      </ul>
+    </section>
+
+    <section class="team">
+      <h3>Meet Our Team</h3>
+      <div class="team-member">
+        <p><strong>Shravan</strong> - CEO</p>
+      </div>
+      <div class="team-member">
+        <p><strong>Shravan</strong> - CTO</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech Devices Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

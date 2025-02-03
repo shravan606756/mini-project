@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+    .btn {
+      margin-top: 20px;
+      background: #f4d03f;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #ffcc00;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+
+</head>
+<body>
+  <header>Contact Us</header>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; 2024 Study of Electronic Gadgets. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
