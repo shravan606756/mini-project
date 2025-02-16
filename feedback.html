@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            padding: 15px 30px;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            padding: 10px;
+        }
+
+        .menu ul li a:hover {
+            color: #f4d03f;
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        select, textarea, .rating input {
+            margin-top: 8px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .rating {
+            display: flex;
+            margin-top: 8px;
+        }
+
+        .rating input {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #f4d03f;
+            color: #000;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 30px;
+            text-align: center;
+            color: #f4d03f;
+        }
+
+        .footer a {
+            color: #f4d03f;
+            text-decoration: none;
+        }
+
+        #h1x {
+            color: #f4d03f;
+        }
+
+        #p1x {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">Study of Electronic Gadgets</div>
+        <div class="menu">
+            <ul>
+                <li><a href="homepage.htlm.html">Home</a></li>
+                <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="feedback-container">
+        <h1 id="h1x">Feedback Form</h1>
+        <p id="p1x">We value your feedback! Please let us know how we're doing and how we can improve.</p>
+
+        <form action="#" method="post">
+            <label for="experience">Overall Experience:</label>
+            <select id="experience" name="experience">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="likeMost">What did you like most?</label>
+            <textarea id="likeMost" name="likeMost" rows="4" placeholder="Your comments..."></textarea>
+
+            <label for="improve">What can we improve?</label>
+            <textarea id="improve" name="improve" rows="4" placeholder="Your suggestions..."></textarea>
+            
+            <label for="recommend">Would you recommend us to others?</label>
+            <select id="recommend" name="recommend">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+            </select>
+
+            <label for="additional">Any additional comments?</label>
+            <textarea id="additional" name="additional" rows="4" placeholder="Your feedback..."></textarea>
+
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">5</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">4</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">3</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">2</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">1</label>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Study of Electronic Gadgets. All Rights Reserved.</p>
+        <a href="contactus.html">Contact Us</a>
+    </footer>
+
+</body>
+</html>
