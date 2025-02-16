@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Learning - TV Components</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      color: white;
+      box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: yellow;
+      color: black;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      background: yellow;
+      color: black;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .tab:hover {
+      background: #1e3c72;
+      color: white;
+    }
+
+    .content {
+      display: none;
+      background: white;
+      color: black;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .active {
+      display: block;
+    }
+
+    img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .details {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+  <script>
+    function showContent(id) {
+      let contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Course Learning - TV Components</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.htlm.html">Home</a></li>
+        <li><a href="companyprof.html">comp</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="tabs">
+    <div class="tab" onclick="showContent('tv')">TV Components</div>
+  </div>
+
+  <div id="tv" class="content active">
+    <h2>Internal Parts of a TV</h2>
+    <p>Learn about the key components inside a modern television.</p>
+    
+    <h3>1. Power Supply Board</h3>
+    <p class="details">Converts AC electricity from the wall into DC power for TV circuits, ensuring stable operation.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/powersupply.webp" alt="Power Supply Board">
+    
+    <h3>2. Main Board (Motherboard)</h3>
+    <p class="details">Processes audio, video, and input signals. Connects to all major parts and manages overall performance.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/motherboard.webp" alt="TV Motherboard">
+    
+    <h3>3. Display Panel</h3>
+    <p class="details">The primary screen where images are displayed using LED, OLED, or QLED technology for stunning visuals.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/displayunit.avif" alt="TV Display Panel">
+    
+    <h3>4. T-Con Board</h3>
+    <p class="details">Controls the timing and signal processing for the display, ensuring smooth image rendering.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/tcon.jpg" alt="T-Con Board">
+    
+    <h3>5. Backlight System</h3>
+    <p class="details">Provides illumination for the display, typically using LED technology to enhance brightness and contrast.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/backlight.jpg" alt="TV Backlight">
+    
+    <h3>6. HDMI & Input Ports</h3>
+    <p class="details">Connects external devices like gaming consoles, streaming devices, and cable boxes for media consumption.</p>
+    <img src="file:///C:/Users/shrav/Downloads/VIT%20Downloads/BENG101L-Technical%20English%20Communication/D1-15983%20-%20SREEJITH%20VARMA%20R%20-%20SSL/2-Grammatical%20Aspects/HDMIPortTypes1.avif" alt="HDMI Ports">
+    
+    <h2>How a TV Works</h2>
+    <ul class="details">
+      <li>Receives and decodes video/audio signals from antennas, cable, or streaming services.</li>
+      <li>Processes images and sound through the mainboard and sends data to the display panel.</li>
+      <li>Backlight illuminates the screen, enhancing image visibility.</li>
+      <li>Sound output is managed by internal speakers or external audio systems.</li>
+    </ul>
+  </div>
+</body>
+</html>
